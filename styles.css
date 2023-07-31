@@ -1,0 +1,33 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(128, 48, 61);
+}
+
+h2,
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.recipes-list a {
+    text-decoration: none;
+}
+
+.recipes-list li {
+    border: 1px solid rgb(194, 176, 172);
+    margin-top: 10px;
+    list-style: none;
+    background-color: rgb(243, 230, 227);
+}
+
+.recipes-list img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid rgb(194, 176, 172);
+}
+
+.recipe-card {
+    background-color: rgb(243, 230, 227);
+    border: 1px solid rgb(194, 176, 172);
+}
