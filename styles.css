@@ -3,44 +3,126 @@
     color: black;
 }
 
-h2,
-h1 {
-    text-align: center;
-    font-weight: bold;
+/* Default Moblie */
+/* Homepage */
+
+body {
+    background-color: rgb(240, 240, 240);
 }
 
 .container {
-    text-decoration: none;
-    display: block;
-    border: solid rgb(218, 218, 218);
-    border-width: 2px 0px;
-    margin: 5px;
-    padding: 5px;
-    width: auto;
-    height: 100px;
-    display: flex;
+    margin: 0 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, 350px);
 }
 
-.container img {
+.header {
+    display: grid;
+    background-color: rgb(201, 201, 201);
+    grid-template-columns: 1fr 4fr;
+    grid-column: 1 / -1;
+    place-items: center stretch;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.logo {
+    font-size: 1.3rem;
+}
+
+.footer {
+    display: grid;
+    background-color: rgb(201, 201, 201);
+    grid-column: 1 / -1;
+    place-items: center stretch;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+}
+
+.menu .nav-links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.menu .bars {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.menu .bars li {
+    list-style: none;
+    line-height: 20%;
+}
+
+.main {
+    display: grid;
+    grid-column: 1 / -1;
+    gap: 10px;
+}
+
+.category {
+    grid-column: 1 / -1;
+}
+
+.cards {
+    display: grid;
+    grid-column: 1 / -1;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.category {
+    grid-column: 1 / -1;
+    background-color: rgb(216, 216, 216);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.card {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-decoration: none;
+    height: 200px;
+}
+
+.card .recipe-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.card img {
     width: 100px;
     height: 100px;
+    border-radius: 5px;
+    justify-self: end;
 }
 
-.container span {
-    margin-left: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
- /* stype for recipe pages */
-.recipe-card {
-    border-top: 1px solid rgb(218, 218, 218);
-}
-
-.recipe img {
-    border: 10px solid rgb(218, 218, 218);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+@media only screen and (min-width: 600px)
